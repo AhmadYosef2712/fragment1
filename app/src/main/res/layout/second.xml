@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue1"
-    tools:context=".homeFrag">
+    tools:context=".second">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -13,7 +13,7 @@
         android:gravity="center"
         android:id="@+id/homeP"
         android:textSize="60dp"
-        android:text="Home Page" />
+        android:text="Log In" />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,7 +36,9 @@
         android:text="Log in"
         android:id="@+id/log"
         android:layout_marginTop="250dp"
-        android:layout_marginLeft="150dp"/>
+        android:layout_marginLeft="150dp"
+
+        />
 
 
 </FrameLayout>

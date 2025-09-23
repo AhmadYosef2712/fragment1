@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue3"
-    tools:context=".secondFrag">
+    tools:context=".home">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -12,6 +12,6 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textSize="60dp"
-        android:text="Second Page" />
+        android:text="WELCOME" />
 
 </FrameLayout>

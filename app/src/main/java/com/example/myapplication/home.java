@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link secondFrag#newInstance} factory method to
+ * Use the {@link home#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class secondFrag extends Fragment {
+public class home extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +24,7 @@ public class secondFrag extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public secondFrag() {
+    public home() {
         // Required empty public constructor
     }
 
@@ -37,8 +37,8 @@ public class secondFrag extends Fragment {
      * @return A new instance of fragment secondFrag.
      */
     // TODO: Rename and change types and number of parameters
-    public static secondFrag newInstance(String param1, String param2) {
-        secondFrag fragment = new secondFrag();
+    public static home newInstance(String param1, String param2) {
+        home fragment = new home();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +59,6 @@ public class secondFrag extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_second, container, false);
+        return inflater.inflate(R.layout.home, container, false);
     }
 }
