@@ -13,30 +13,8 @@
         android:gravity="center"
         android:id="@+id/homeP"
         android:textSize="60dp"
-        android:text="Log In" />
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Enter Username"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="100dp"
-        android:id="@+id/user"/>
+        android:text="Exit" />
 
-    <EditText
-        android:id="@+id/pass"
-        android:layout_width="wrap_content"
-        android:layout_marginTop="175dp"
-        android:layout_marginLeft="130dp"
-        android:layout_height="wrap_content"
-        android:hint="Enter Password" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Log in"
-        android:id="@+id/log"
-        android:layout_marginTop="250dp"
-        android:layout_marginLeft="150dp"
 
         />
 

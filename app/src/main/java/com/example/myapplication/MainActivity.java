@@ -44,9 +44,8 @@ private EditText p,u;
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 if (item.getItemId() == R.id.mnuHome) {
-                    frHome.setVisibility(View.VISIBLE);
-                    frFirst.setVisibility(View.INVISIBLE);
-                    frSecond.setVisibility(View.INVISIBLE);
+                    finish();
+                   System.exit(0);
                 }
                 if (item.getItemId() == R.id.mnuFrag1) {
                     frFirst.setVisibility(View.VISIBLE);
