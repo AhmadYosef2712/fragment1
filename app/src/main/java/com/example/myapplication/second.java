@@ -16,17 +16,15 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
-public class second extends Fragment {
+public class second extends Fragment  {
 
-
+    private Button b;
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
 
     private String mParam1;
     private String mParam2;
 
-    private EditText p,u;
 
     public second() {
     }
@@ -59,6 +57,7 @@ public class second extends Fragment {
         return inflater.inflate(R.layout.second, container, false);
 
     }
+
 
 
 

@@ -4,6 +4,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.Toast;
@@ -14,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 public static FrameLayout frHome,frFirst,frSecond;
 private BottomNavigationView nav1;
 private second homeFrag;
@@ -28,6 +29,7 @@ private EditText p,u;
         frHome = findViewById(R.id.fr1);
         frFirst = findViewById(R.id.fr2);
         frSecond = findViewById(R.id.fr3);
+
 
         homeFrag = new second();
         firstFrag = new firstFrag();
@@ -44,8 +46,9 @@ private EditText p,u;
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 if (item.getItemId() == R.id.mnuHome) {
-                    finish();
-                   System.exit(0);
+                    frFirst.setVisibility(View.INVISIBLE);
+                    frSecond.setVisibility(View.INVISIBLE);
+                    frHome.setVisibility(View.VISIBLE);
                 }
                 if (item.getItemId() == R.id.mnuFrag1) {
                     frFirst.setVisibility(View.VISIBLE);
@@ -66,5 +69,14 @@ private EditText p,u;
 
 
 
+
     }
+
+    @Override
+    public void onClick(View v) {
     }
+    public void exit(View v) {
+        finish();
+        System.exit(0);
+    }
+}

@@ -6,7 +6,7 @@
     android:background="@color/blue1"
     tools:context=".second">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,8 +15,17 @@
         android:textSize="60dp"
         android:text="Exit" />
 
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="exit"
+        android:id="@+id/close"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="155dp"
+        android:onClick="exit"
         />
+
+
 
 
 </FrameLayout>
